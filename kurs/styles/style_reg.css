@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Federant";
+    src: url("../fonts/Federant-Regular.ttf");
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background: #D1D7E0;
+    
+}
+
+main{
+    background: #D1D7E0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: relative;
+    max-width: 482px;
+    max-height: 926px;
+    background: #4C495D;
+    border-radius: 30px;
+    padding-left: 49px;
+    padding-right: 49px;
+}
+
+input {
+    color: #4C495D;
+    height: 95px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 75px;
+    border-radius: 25px;
+    border:2px solid  #423f53;
+    padding-left: 22px;
+    background-color: #D1D7E0
+}
+input:user-invalid{
+    border-color: red;
+}
+input:focus{
+    outline: none;
+    border: 2px solid  #423f53;
+}
+.title {
+    color: #fff;
+    font-size: 48px;
+    font-family: Federant;
+    padding-top: 39px;
+    padding-bottom: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    
+}
+
+.inputs_place {
+    margin-bottom: 29px;
+}
+
+.form_buttons{
+    margin-top: 107px;
+    padding-bottom: 75px;
+}
+
+.button{
+    display: block;
+    height: 95px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 95px;
+    border-radius: 25px;
+    background-color: #D1D7E0;
+    color: #4C495D;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover{
+    background-color: #e3e2df;
+}
+
+a.button{
+    text-decoration: none; 
+}
+
+.button_log-in{
+    color:black;
+    background: #524f66;
+}
+.button_log-in:hover{
+    background: #D1D7E0;
+}
+
+.or{
+    font-size: 17px;
+    line-height: 18px;
+    color: #D1D7E0;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    user-select: none;
+}
