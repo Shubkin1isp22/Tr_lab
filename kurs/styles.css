@@ -12,19 +12,28 @@
 }
 body {max-height:200vh}
 body {
-    height: 200vh;
+    height: 100vh;
     background: #D1D7E0;
     
 }
-.background-section {
+.container{
     position: relative;
     width: 100%;
-    height: calc(100vw * 18 / 16);
-    background-image: url('img/port.png');
+    height: 100%;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; 
-  }
+
+}
+
+.background_img{
+    background-image: url('img/port.png');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-top: -74px;
+
+}
+
 header {
     position:fixed;
     z-index: 1000;
@@ -68,19 +77,20 @@ header nav ul li a:hover {
 }
 
 .button{
-    
-    position: absolute;
+    position: relative;
     padding:41px 127px 42px;
     margin-bottom: 56px;
     background-color: #4C495D;
     border-radius: 25px;
     border:none;
     cursor: pointer;
-    position: relative;
     left: 45px;
-    top: 150px;
-    display: block;
+    top: 210px;
+    display: flex;
     width: 488px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .button_text {
     font-family: 'Fraunces';
@@ -88,7 +98,9 @@ header nav ul li a:hover {
     color:#fff;
     text-transform: uppercase;
     user-select: none;
+    
 }
+
 footer {
     position:fixed;
     width: 100%;
@@ -120,52 +132,4 @@ footer nav ul li a_0 {
     font-family: Federant;
     display: block;
     user-select: none;
-}
-
-/* Стили для расписания рейсов*/
-@font-face {
-    font-family: "Crimson_Pro";
-    src: url("fonts/CrimsonPro-Regular.ttf");
-  }
-main {
-    position:fixed;
-    top: 78px;
-    left: 0;
-    right: 0;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2%;
-    box-shadow: 0 2px 6px #2D283E;
-}
-main nav ul li{
-    position: relative;
-    float: left;
-    justify-content: center;
-    align-items: center;
-}
-main nav ul li h{
-    padding: 15px;
-    color:black;
-    font-size: 32px;
-    font-family: Crimson_Pro;
-    font-weight: normal;
-    display: block;
-    user-select: none;
-    background-color: #FCE181;
-    margin: 5px;
-    border-radius: 20px;
-}
-main .buy{
-    padding: 15px;
-    font-size: 32px;
-    color:black;
-    font-family: Crimson_Pro;
-    font-weight: normal;
-    display: block;
-    display: block;
-    user-select: none;
-    background-color: #FCE181;
-    border-radius: 20px;
 }
